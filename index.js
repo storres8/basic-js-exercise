@@ -7,10 +7,10 @@ let height = prompt("Enter your height in cm")
 
 let pet_name = prompt("Enter your pet's name")
 
-let f_letter = f_name[0]
-let l_letter = l_name[0]
+let f_letter = f_name[0].toLowerCase()
+let l_letter = l_name[0].toLowerCase()
 
-if(f_letter === l_letter && age > 20 && age < 30 && height >= 170 && pet_name.slice(-1) === "y"){
+if(f_letter === l_letter && age > 20 && age < 30 && height >= 170 && pet_name.slice(-1).toLowerCase() === "y"){
   console.log("Welcome secret agent...");
 }else{
   console.log("Nothing to see here");
